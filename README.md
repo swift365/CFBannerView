@@ -37,6 +37,10 @@ extension ViewController:CFBannerViewDataSource,CFBannerViewDelegate{
 
 ## Requirements
 
+- iOS 8.0+
+- Xcode 8.2+
+- Swift 3
+
 ## Installation
 
 CFBannerView is available through [CocoaPods](http://cocoapods.org). To install
