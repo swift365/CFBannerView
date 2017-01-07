@@ -46,7 +46,6 @@ public class CFBannerView: UIView,UIScrollViewDelegate {
     private func setupViews(){
      
         self.scrollView = UIScrollView(frame: self.bounds)
-           scrollView.backgroundColor = UIColor.green
         self.scrollView.isPagingEnabled = true
         self.scrollView.showsHorizontalScrollIndicator = false
         self.scrollView.showsVerticalScrollIndicator = false
