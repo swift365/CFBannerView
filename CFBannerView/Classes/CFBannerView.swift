@@ -27,11 +27,11 @@ public class CFBannerView: UIView,UIScrollViewDelegate {
     public var delegate: CFBannerViewDelegate?
     
     /// 时间间隔
-    var autoTimeInterval:Double = 5
+    public var autoTimeInterval:Double = 5
     /// 当前选中page的颜色
-    var currentPageColor:UIColor = UIColor.white
+    public var selectedPageColor:UIColor = UIColor.white
     /// 未选中page的颜色
-    var pageInicatorColor:UIColor = UIColor(red: 170/255.0, green: 170/255.0, blue: 170/255.0, alpha: 0.6)
+    public var pageColor:UIColor = UIColor(red: 170/255.0, green: 170/255.0, blue: 170/255.0, alpha: 0.6)
 
     public override init(frame: CGRect) {
         super.init(frame: frame)
@@ -96,8 +96,8 @@ public class CFBannerView: UIView,UIScrollViewDelegate {
             pageControl.isHidden = false
             pageControl.numberOfPages = itemCount
             pageControl.currentPage = 0
-            pageControl.currentPageIndicatorTintColor = currentPageColor
-            pageControl.pageIndicatorTintColor = pageInicatorColor
+            pageControl.currentPageIndicatorTintColor = selectedPageColor
+            pageControl.pageIndicatorTintColor = pageColor
             
             //将最后一个item放在最前面（不显示）
             let firstView = dataSource.viewForItem(bannerView: self, index: itemCount - 1)
