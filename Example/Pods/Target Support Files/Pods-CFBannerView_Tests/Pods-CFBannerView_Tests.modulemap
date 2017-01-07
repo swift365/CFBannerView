@@ -1,0 +1,6 @@
+framework module Pods_CFBannerView_Tests {
+  umbrella header "Pods-CFBannerView_Tests-umbrella.h"
+
+  export *
+  module * { export * }
+}
